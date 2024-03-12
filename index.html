@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border: 1px solid black;
+            margin: 0 auto;
+            border-radius: 5px;
+            background-color: cadetblue;
+        }
+
+        button {
+            width: 100px;
+            padding: 1px 1px;
+            background-color: crimson;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+            transition: .3s;
+            margin: 3px;
+            
+            
+        }
+        button:active{
+            background-color: #000;     
+        }
+      
+        input[type="text"] {
+            padding: 5px 5px;
+            font-size: 24px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="calcu" class="calcu">
+        <tr>
+            <td colspan="3"> <input type="text" id="result" class="display" readonly> </td>
+
+<td><button onclick="Clear()">c</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="Changer('1')">1</button></td>
+            <td><button onclick="Changer('2')">2</button></td>
+            <td><button onclick="Changer('3')">3</button></td>
+            <td><button onclick="Changer('/')">/</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="Changer('4')">4</button></td>
+            <td><button onclick="Changer('5')">5</button></td>
+            <td><button onclick="Changer('6')">6</button></td>
+            <td><button onclick="Changer('*')">*</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="Changer('7')">7</button></td>
+            <td><button onclick="Changer('8')">8</button></td>
+            <td><button onclick="Changer('9')">9</button></td>
+            <td><button onclick="Changer('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="Changer('0')">0</button></td>
+            <td><button onclick="Changer('.')">.</button></td>
+            <td><button onclick="Row()">=</button></td>
+            <td><button onclick="Changer('+')">+</button></td>
+        </tr>
+    </table>
+
+    <script src="script1.js"></script>
+</body>
+</html>
